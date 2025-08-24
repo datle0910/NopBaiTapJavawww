@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns="https://jakarta.ee/xml/ns/jakartaee"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="https://jakarta.ee/xml/ns/jakartaee https://jakarta.ee/xml/ns/jakartaee/web-app_5_0.xsd"
+         version="5.0">
+    <welcome-file-list>
+        <welcome-file>register.html</welcome-file>
+    </welcome-file-list>
+    <servlet>
+        <servlet-name>helloservlet</servlet-name>
+        <servlet-class>iuh.fit.se.tuan1.HelloServlet</servlet-class>
+
+        <init-param>
+            <param-name>hoten</param-name>
+            <param-value>le van dat</param-value>
+        </init-param>
+        <init-param>
+            <param-name>masv</param-name>
+            <param-value>22001605</param-value>
+        </init-param>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>helloservlet</servlet-name>
+        <url-pattern>/hello</url-pattern>
+        <url-pattern>/hello1</url-pattern>
+    </servlet-mapping>
+    <context-param>
+        <param-name>appName</param-name>
+        <param-value>Application Name</param-value>
+    </context-param>
+</web-app>
